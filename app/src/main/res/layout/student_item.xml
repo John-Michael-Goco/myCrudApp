@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Main Row Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:id="@+id/cashAccountLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/student_svgrepo_com"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Title and Amount Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/studentNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Number"
+                android:textSize="13sp"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <!-- Image Buttons -->
+        <ImageButton
+            android:id="@+id/studentEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_co_present_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Action Button"
+            app:tint="@color/cerulean"/>
+
+        <ImageButton
+            android:id="@+id/studentDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_delete_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Action Button"
+            app:tint="@color/red"
+            app:maxImageSize="50dp"/>
+    </LinearLayout>
+
+    <!-- Bottom Border -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

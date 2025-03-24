@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="eerie_black">#222222</color>
+    <color name="white">#FFFFFF</color>
+    <color name="satin_gold">#CCA43B</color>
+    <color name="cerulean">#0C7489</color>
+    <color name="light_green">#1CD929</color>
+    <color name="green">#429946</color>
+    c<color name="dark_green">#006400</color>
+    <color name="grey">#404240</color>
+    c<color name="red">#FF0000</color>
+</resources>
