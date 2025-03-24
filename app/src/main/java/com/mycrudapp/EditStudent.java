@@ -124,6 +124,8 @@ public class EditStudent extends AppCompatActivity {
 
                         if ("success".equals(status)) {
                             Toast.makeText(this, "Student Successfully Updated!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(EditStudent.this, StudentsList.class);
+                            startActivity(intent);
                             finish();
                         } else if ("exists".equals(status)) {
                             Toast.makeText(this, "Student Number already registered!", Toast.LENGTH_LONG).show();
